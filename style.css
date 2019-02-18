@@ -1,0 +1,235 @@
+
+:root{
+  /*This is where colours live, get you some*/
+--text:#4a3c4a;
+--bg:#8fa2ad;
+--title:#2e2e2e;
+--subtitle:#777777;
+--body:#faf1ec;
+--tab_hover:rgb(157, 104, 104);
+--tab_sel:rgb(157, 104, 104);
+--ribbon:rgb(180, 122, 122);
+--shadow:rgba(60, 60, 60, 0.75);
+--wallpaper:url('texture.png');
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+html {
+  background:var(--wallpaper) var(--bg);
+  background-repeat: repeat;
+  transition: all 1s;
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  padding: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  text-align: center;
+  background: var(--body);
+  width: 80vw;
+  height: 84vh;
+  margin: 8vh auto 4vh auto;
+  color:var(--text);
+  text-decoration: none;
+  border-radius: 2em;
+  box-shadow: .1em .1em 0 var(--shadow);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.tab {
+  position: absolute;
+  width: 76.75vw;
+  left: 9.625vw;
+  top: 7.5vh;
+  background: var(--ribbon);
+  margin: 5vh auto 5vh auto;
+  padding: 0 1vw 0 3vw;
+  box-shadow: .1em .1em 0 var(--shadow);
+}
+
+.tab:before, .tab:after {
+  content: '.';
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 1.9em;
+  position: absolute;
+  top: 1vh;
+  display: block;
+  z-index: -1;
+  box-shadow: 0 .15em 0 var(--shadow);
+}
+
+.tab:before {
+  left: -2em;
+  border-right-width: 2em;
+  border-color: var(--ribbon) var(--ribbon) var(--ribbon) transparent;
+  filter: brightness(80%);
+}
+
+.tab:after {
+  right: -2em;
+  border-left-width: 2em;
+  border-color: var(--ribbon) transparent var(--ribbon) var(--ribbon);
+  filter: brightness(80%);
+}
+
+.tab button {
+  background: none;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2.25vh 16px;
+  transition: 0.3s;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13pt;
+}
+
+.tab button:hover {
+  background-color: var(--tab_hover);
+  transition: .5s;
+}
+
+.tab button.active {
+  background-color: var(--tab_hover);
+}
+
+.tabcontent {
+  animation: fadeEffect .5s;
+  display: none;
+  padding: 13vh 2vw 5vh 2vw;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 25pt;
+  color:var(--title);
+  margin: auto auto 0.25em 0.5em;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: var(--subtitle);
+  font-size: 18pt;
+  margin: auto;
+}
+
+h3{
+  color: var(--ribbon);
+  font-size: 16pt;
+  padding: none;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+#biopic {
+  height: auto;
+  width: 25%;
+  border: 0.5em double var(--shadow);
+  float: left;
+  margin: 3em 1em 1em 2em;
+}
+hr {
+  margin: 0.5em;
+  display: block;
+  border: 0.125em solid var(--text);
+  border-radius: 0.125em;
+  box-shadow: 0.05em 0.05em 0.1em var(--shadow);
+}
+.div-light {
+  margin: auto;
+  display: block;
+  width: 70vw;
+  border: 0.05em dashed var(--shadow);
+  border-radius: 0.125em;
+  box-shadow: none;
+}
+p{
+  font-size: 13pt;
+  color: var(--text);
+  text-align: justify;
+  text-indent: 1em;
+}
+#About_txt {
+  padding: 0.5em;
+  display: block;
+  width: 30vw;
+  margin: 4em 1em 1em 1em;
+  float: left;
+  position: relative;
+}
+#About_info{
+  display: inline-table;
+  padding: 1em;
+  margin: 1em 1em 1em 1em;
+  width: auto;
+  border-collapse: collapse;
+  float: left;
+  position: relative;
+  background: var(--bg);
+  border-radius: 1em;
+  filter: brightness(110%);
+}
+th {
+  padding: 0.5em 0 0.5em 1em;
+  margin: 0.25em;
+  text-align: right;
+  background: inherit;
+  font-size: 16pt;
+}
+td {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0.25em;
+  font-size: 15pt;
+  text-align: left;
+  background: inherit;
+}
+.job {
+  text-align: left;
+  display: block;
+  margin: 1em auto 0 1em;
+  padding: 0.5em;
+}
+#skill_list {
+  display: block;
+  float: left;
+  position: relative;
+  margin: 1em;
+  width: 40vw;
+}
+#skill_list > hr {
+  width: 35vw;
+  margin: 1.5em;
+}
+#bike{
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  position: relative;
+  height: 45vh;
+  border: 0.325em solid var(--text);
+  border-radius: 0.125em;
+  width: auto;
+  margin: auto;
+  top: 5em;
+}
+.tab>.fa-instagram{
+  float: right;
+  text-decoration: none;
+  font-size: 3vh;
+  color: black;
+  padding: 1.75vh 16px;
+}
