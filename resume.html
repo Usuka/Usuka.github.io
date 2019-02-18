@@ -25,7 +25,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 window.onload = function() {
-  document.getElementById("defaultOpen").style.display = "block";
+  document.getElementById("defaultOpen").openTab(event, 'About Me');
 }
 </script>
 <body>
@@ -42,7 +42,7 @@ window.onload = function() {
   <h1>Michael Johnson</h1>
   <hr>
   <img id="biopic" src="biopic.jpg"></img>
-  <p id="About_txt"> I am an undergraduate mechanical engineering student at Clemson University. I have experience in multiple engineering disciplines, including mechanical, electrical, and software engineering. I enjoy solving difficult technical problems and learning new things along the way. Give me a task and I will find a way to complete it. I like to try new things and I won't stray away from doing something out of my comfort zone. In my free time, I love to spend time maintaining and riding bikes of all disciplines, programming, metalwork, and building analog synthesizers. </p>
+  <p id="About_txt"> I am an undergraduate mechanical engineering student at Clemson University. I have experience in multiple engineering disciplines, including mechanical, electrical, and software engineering. I enjoy solving difficult technical problems and learning new things along the way. Give me a task and I will find a way to complete it. I like to try new things and I won't stray away from doing something out of my comfort zone. In my free time, I love to spend time maintaining and riding bikes of all disciplines, programming, metalwork, and building small electronics. </p>
   <table id="About_info">
     <tr> <th>Email:</th> <td>michaelsjsc@gmail.com</td> </tr>
     <tr> <th>Cell:</th> <td>(864) 735-6355</td> </tr>
@@ -57,33 +57,31 @@ window.onload = function() {
   <div id="job0" class="job">
     <h2>Pedal Chic</h2>
     <h3>Greenville SC, 2018</h3>
-    <p>I worked full-time for three months over the summer of 2018 as lead mechanic and salesperson at Pedal Chic Cycles. Utilizing and cultivating my passion and knowledge about cycling I helped customers find the right bike and worked with them to create a fun cycling experience through maintenance services, workshops, education services, and bike fitting.
-</br>During my time there I worked with the local cycling community to promote the construction of bike lanes, fund the local rail-to-trail system, host group rides from the shop, and organize small races including an alleycat.
+    <p> I worked for three months over the summer of 2018 as lead mechanic and salesperson at Pedal Chic Cycles. Utilizing and cultivating my passion and knowledge about cycling I helped customers find the right bike and worked with them to create a fun cycling experience through maintenance services, workshops, education services, and bike fitting.
 </p>
 <hr class="div-light">
 </div>
   <div id="job1" class="job">
     <h2>CPR Cell Phone Repair</h2>
     <h3>Greenville SC, 2017</h3>
-    <p>I worked three months over the summer of 2017 as assistant manager at the Haywood location. Over this time, I gained extensive experience in customer relations and retail management in addition to learning microchip-level cell phone repair and matinence.</p>
-  </div>
-  <hr class="div-light">
-  <div id="job2" class="job">
-    <h2>FIRST Robotics Team 281</h2>
-    <h3>Greenville, SC 2013-2017</h3>
-    <p>The Entech Green Villains is a high school robotics team organized by Mark Hapstack affiliated with the FIRST Robotics organization. On the team, students meet year-round to design, construct, and compete with a robot built from scratch. From my time on the team, I gained early in-depth experience in electrical and mechanical engineering, AutoCAD, SolidWorks, and several programming languages including C++ and Java</p>
-    <b>Accomplishments</b>
-    <ul>
-      <li>Four years of extensive experience in electrical and mechanical engineering, design, and manufacturing. During which I specialized in electrical systems.</li>
-      <li>Two years in a leadership position as Electrical Capitan. As which I trained and lead up to ten other students in designing, constructing, and maintaining electrical systems for various robots</li>
-      <li>Extensive training with various manufacturing and prototyping equipment; Including lathes, mills (Both CNC and manual), bandsaws, laser cutters, and 3D printers.</li>
-    </ul>
+    <p>I worked three months over the summer of 2017 as assistant manager at CPR Phone Repair. Over this time, I gained extensive experience in customer relations and retail management in addition to learning various electronic diagnostic techniques and problem-solving skills.</p>
   </div>
   <hr class="div-light">
   <div id="job3" class="job">
   <h2>Additional Experience</h2>
-  <p>over 200 hours of community service with various local organizations including the United Way, Upstate Forever, and the Greenville Humane Society.</p>
+  <div id="job2" class="job">
+  <h2>FIRST Robotics Team 281</h2>
+  <h3>Greenville, SC 2013-2017</h3>
+  <p>I was on a FIRST robotics team for the duration of my high-school education. From my time on the team, I gained early in-depth experience in electrical and mechanical engineering, AutoCAD, SolidWorks, and several programming languages including C++ and Java. I also gained valuble experience in a leadership role as the head of electrical design.</p>
+  <b>Accomplishments</b>
+  <ul>
+    <li>Four years of extensive experience in electrical and mechanical engineering, design, and manufacturing. During which I specialized in electrical systems.</li>
+    <li>Two years in a leadership position as Electrical Capitan. As which I trained and lead up to ten other students in designing, constructing, and maintaining electrical systems for various robots</li>
+    <li>Extensive training with various manufacturing and prototyping equipment; Including lathes, mills (Both CNC and manual), bandsaws, laser cutters, and 3D printers.</li>
+  </ul>
   </div>
+  <p>Over 200 hours of community service with various local organizations including the United Way, Upstate Forever, and the Greenville Humane Society.</p>
+</div>
 </div>
 <div id="Education" class="tabcontent">
   <h1>Education</h1>
@@ -112,10 +110,11 @@ window.onload = function() {
   <hr>
   <div class="job" id="skill_list">
     <ul>
-      <li>Fluency in HTML, CSS, Javascript, Python, Visual Basic, MATLab and Bash </li>
-      <li>High understanding of Linux and UNIX architecture and system operation</li>
-      <li>Trained in AutoCAD and SolidWorks</li>
-      <li>Experienced in using various computer programs including but not limited to Microsoft Office, Visual Studio, Vim, Photoshop, and Oracle VM</li>
+      <li>Proficency in several programming languages including pyhton, C, bash, javascript, css, less, html, zsh, C++, VisualBasic, and MatLab </li>
+      <li>Concrete understanding in linux archetechiture and a passion for user interface design and customization</li>
+      <li>Trained in AutoCAD and certified in SolidWorks</li>
+      <li>Adept with countless programs including Microsoft Office, Virtualbox,  </li>
+      <li>Certified in the Clemson University Machine Shop</li>
       <li>Over four years experience in building, fixing, and maintaining bicycles</li>
     </ul>
     <hr class="div-light">
