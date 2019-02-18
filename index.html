@@ -6,127 +6,14 @@ Kudos on being through. Nothing particularly interesting here though
 <html>
   <head>
     <title>Velomaniac</title>
+    <!--
     <link rel="stylesheet" href="style.css">
+  -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-<script type="text/javascript", language="javascript">
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-window.onload = function() {
-  document.getElementById("defaultOpen").click();
-}
-</script>
 <body>
-  <!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'About Me')" id="defaultOpen">About Me</button>
-  <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
-  <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
-  <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
-  <a href="https://www.instagram.com/bichael_nonsense/" class="fa fa-instagram"></a>
-</div>
-<!-- Tab content -->
-<div id="About Me" class="tabcontent">
-  <h1>Michael Johnson</h1>
-  <hr>
-  <img id="biopic" src="biopic.jpg"></img>
-  <p id="About_txt"> I am an undergraduate mechanical engineering student at Clemson University. I have experience in multiple engineering disciplines, including mechanical, electrical, and software engineering. I enjoy solving difficult technical problems and learning new things along the way. Give me a task and I will find a way to complete it. I like to try new things and I won't stray away from doing something out of my comfort zone. In my free time, I love to spend time maintaining and riding bikes of all disciplines, programming, metalwork, and building small electronics like analog synthes </p>
-  <table id="About_info">
-    <tr> <th>Email:</th> <td>michaelsjsc@gmail.com</td> </tr>
-    <tr> <th>Cell:</th> <td>(864) 735-6355</td> </tr>
-    <tr> <th>Address:</th> <td>10 Frosty Meadow Ct. Greenville SC</td> </tr>
-    <tr> <th>Birth-date:</th> <td>July 3rd, 1999</td> </tr>
-  </table>
-</div>
-
-<div id="Experience" class="tabcontent">
-  <h1>Experience</h1>
-  <hr>
-  <div id="job0" class="job">
-    <h2>Pedal Chic</h2>
-    <h3>Greenville SC, 2018</h3>
-    <p>I worked full-time for three months over the summer of 2018 as lead mechanic and salesperson at Pedal Chic Cycles. Utilizing and cultivating my passion and knowledge about cycling I helped customers find the right bike and worked with them to create a fun cycling experience through maintenance services, workshops, education services, and bike fitting.
-</br>During my time there I worked with the local cycling community to promote the construction of bike lanes, fund the local rail-to-trail system, host group rides from the shop, and organize small races including an alleycat.
-</p>
-<hr class="div-light">
-</div>
-  <div id="job1" class="job">
-    <h2>CPR Cell Phone Repair</h2>
-    <h3>Greenville SC, 2017</h3>
-    <p>I worked three months over the summer of 2017 as assistant manager at the Haywood location. Over this time, I gained extensive experience in customer relations and retail management in addition to learning microchip-level cell phone repair and matinence.</p>
-  </div>
-  <hr class="div-light">
-  <div id="job2" class="job">
-    <h2>FIRST Robotics Team 281</h2>
-    <h3>Greenville, SC 2013-2017</h3>
-    <p>The Entech Green Villains is a high school robotics team organized by Mark Hapstack affiliated with the FIRST Robotics organization. On the team, students meet year-round to design, construct, and compete with a robot built from scratch. From my time on the team, I gained early in-depth experience in electrical and mechanical engineering, AutoCAD, SolidWorks, and several programming languages including C++ and Java</p>
-    <b>Accomplishments</b>
-    <ul>
-      <li>Four years of extensive experience in electrical and mechanical engineering, design, and manufacturing. During which I specialized in electrical systems.</li>
-      <li>Two years in a leadership position as Electrical Capitan. As which I trained and lead up to ten other students in designing, constructing, and maintaining electrical systems for various robots</li>
-      <li>Extensive training with various manufacturing and prototyping equipment; Including lathes, mills (Both CNC and manual), bandsaws, laser cutters, and 3D printers.</li>
-    </ul>
-  </div>
-  <hr class="div-light">
-  <div id="job3" class="job">
-  <h2>Additional Experience</h2>
-  <p>over 200 hours of community service with various local organizations including the United Way, Upstate Forever, and the Greenville Humane Society.</p>
-  </div>
-</div>
-<div id="Education" class="tabcontent">
-  <h1>Education</h1>
-  <hr>
-  <div id="school1" class="job">
-    <h2>Clemson University - College of Engineering</h2>
-    <h3>Clemson, SC 2017-2021</h3>
-    <p>Currently a sophomore pursuing a bachelors in mechanical engineering. During my enrollment I have gained a great amount of experience in topics related to mechanical engineering including material science, physics, thermodynamics, fluid mechanics, mathematics, chemistry and more specific fields of study such as prosthetic design and automotive design.</p>
-    <hr class="div-light">
-  </div>
-  <div id="school2" class="job">
-    <h2>Greenville Technical Charter High School</h2>
-    <h3>Greenville, SC 2013-2017</h3>
-    <p>A charter high school run in collaboration with the Greenville Technical College. It was created to provide high school students with advanced accelerated learning programs through the enrollment in college courses alongside standard high school courses<br>Graduated with a final GPA of 4.27</p>
-  </div>
-  <hr class="div-light">
-  <div id="school3" class="job">
-    <h2>Greenville Technical College</h2>
-    <h3>Greenville, SC 2013-2017</h3>
-    <p>Early College Program - Transferred to Clemson University</p>
-  </div>
-</div>
-
-<div id="Skills" class="tabcontent">
-  <h1>Skills</h1>
-  <hr>
-  <div class="job" id="skill_list">
-    <ul>
-      <li>Fluency in HTML, CSS, Javascript, Python, Visual Basic, MATLab and Bash </li>
-      <li>High understanding of Linux and UNIX architecture and system operation</li>
-      <li>Trained in AutoCAD and SolidWorks</li>
-      <li>Experienced in using various computer programs including but not limited to Microsoft Office, Visual Studio, Vim, Photoshop, and Oracle VM</li>
-      <li>Over four years experience in building, fixing, and maintaining bicycles</li>
-    </ul>
-    <hr class="div-light">
-    <h2>Accomplishments</h2>
-    <ul>
-      <li>Built a bicycle from scratch using carbon fiber and bamboo</li>
-      <li>Built, configured, and sold custom desktop computers for two years in high school</li>
-    </ul>
-  </div>
-  <img src="bike.jpg" alt="" id="bike"></img>
-</div>
-
+  <h1>TBB</h1>
+  <h3>(To be built)</h3>
 </body>
 </html>
