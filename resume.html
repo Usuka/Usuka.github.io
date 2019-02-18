@@ -25,7 +25,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 window.onload = function() {
-  document.getElementById("defaultOpen").openTab(event, 'About Me');
+  document.getElementById("About Me").style.display = "block";
 }
 </script>
 <body>
@@ -37,12 +37,13 @@ window.onload = function() {
   <button class="tablinks" onclick="openTab(event, 'Skills')">Skills</button>
   <a href="https://www.instagram.com/bichael_nonsense/" class="fa fa-instagram"></a>
 </div>
+<div id="ribbon_bg"></div>
 <!-- Tab content -->
 <div id="About Me" class="tabcontent">
   <h1>Michael Johnson</h1>
   <hr>
   <img id="biopic" src="biopic.jpg"></img>
-  <p id="About_txt"> I am an undergraduate mechanical engineering student at Clemson University. I have experience in multiple engineering disciplines, including mechanical, electrical, and software engineering. I enjoy solving difficult technical problems and learning new things along the way. Give me a task and I will find a way to complete it. I like to try new things and I won't stray away from doing something out of my comfort zone. In my free time, I love to spend time maintaining and riding bikes of all disciplines, programming, metalwork, and building small electronics. </p>
+  <p id="About_txt"> I am an undergraduate mechanical engineering student at Clemson University. I have experience in multiple engineering disciplines, including mechanical, electrical, and computer engineering. I enjoy solving difficult technical problems and learning new things along the way. Give me a task and I will find a way to complete it. I like to try new things and I won't stray away from doing something out of my comfort zone. In my free time, I love to spend time maintaining and riding bikes of all disciplines, programming, metalwork, and building small electronics. </p>
   <table id="About_info">
     <tr> <th>Email:</th> <td>michaelsjsc@gmail.com</td> </tr>
     <tr> <th>Cell:</th> <td>(864) 735-6355</td> </tr>
@@ -95,7 +96,7 @@ window.onload = function() {
   <div id="school2" class="job">
     <h2>Greenville Technical Charter High School</h2>
     <h3>Greenville, SC 2013-2017</h3>
-    <p>A charter high school run in collaboration with the Greenville Technical College. It was created to provide high school students with advanced accelerated learning programs through the enrollment in college courses alongside standard high school courses<br>Graduated with a final GPA of 4.27</p>
+    <p>A charter high school run in collaboration with the Greenville Technical College. It was created to provide high school students with advanced accelerated learning programs through the enrollment in college courses alongside standard high school courses<br>Graduated with a final GPA of 3.89</p>
   </div>
   <hr class="div-light">
   <div id="school3" class="job">
@@ -113,18 +114,20 @@ window.onload = function() {
       <li>Proficency in several programming languages including pyhton, C, bash, javascript, css, less, html, zsh, C++, VisualBasic, and MatLab </li>
       <li>Concrete understanding in linux archetechiture and a passion for user interface design and customization</li>
       <li>Trained in AutoCAD and certified in SolidWorks</li>
-      <li>Adept with countless programs including Microsoft Office, Virtualbox,  </li>
+      <li>Adept with countless programs including Microsoft Office, Virtualbox, Photoshop, and more. </li>
       <li>Certified in the Clemson University Machine Shop</li>
       <li>Over four years experience in building, fixing, and maintaining bicycles</li>
     </ul>
     <hr class="div-light">
-    <h2>Accomplishments</h2>
+    <h2> Misc. Accomplishments</h2>
     <ul>
       <li>Built a bicycle from scratch using carbon fiber and bamboo</li>
       <li>Built, configured, and sold custom desktop computers for two years in high school</li>
     </ul>
   </div>
+  <!--
   <img src="bike.jpg" alt="" id="bike"></img>
+-->
 </div>
 
 </body>
