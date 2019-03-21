@@ -168,9 +168,11 @@ p{
   padding: 0.5em;
   display: block;
   width: 30vw;
-  margin: 8em 1em 1em 1em;
+  margin: 4em 1em 1em 1em;
   float: left;
   position: relative;
+  text-align: left;
+  font-size: 12pt;
 }
 #About_info{
   display: inline-table;
