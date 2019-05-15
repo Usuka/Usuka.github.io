@@ -1,4 +1,3 @@
-
 :root{
   /*This is where colours live, get you some*/
 --text:#4a3c4a;
@@ -12,35 +11,35 @@
 --shadow:rgba(60, 60, 60, 0.75);
 --wallpaper:url('texture.png');
 }
-
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
+*:focus {
+    outline: none;
+}
 html {
   background:var(--wallpaper) var(--bg);
   background-repeat: repeat;
   transition: all 1s;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: auto;
   padding: 0px;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
-
 body{
   text-align: center;
   background: var(--body);
   width: 80vw;
-  height: 84vh;
-  margin: 8vh auto 4vh auto;
+  height: 95vh;
+  margin: 2.5vh auto auto auto;
   color:var(--text);
   text-decoration: none;
-  border-radius: 0em;
+  border-radius: 2em;
   box-shadow: .1em .1em 0 var(--shadow);
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -49,13 +48,12 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 76.75vw;
   left: 9.625vw;
-  top: 7vh;
+  top: 6vh;
   background: var(--ribbon);
-  margin: 5vh auto 5vh auto;
+  margin: 0 auto auto auto;
   padding: 0 1vw 0 3vw;
   box-shadow: .1em .1em 0 var(--shadow);
 }
-
 .tab:before, .tab:after {
   content: '.';
   height: 0;
@@ -68,87 +66,81 @@ body::-webkit-scrollbar {
   z-index: -99;
   box-shadow: 0 .15em 0 var(--shadow);
 }
-
 .tab:before {
   left: -2em;
   border-right-width: 2em;
   border-color: var(--ribbon) var(--ribbon) var(--ribbon) transparent;
   filter: brightness(80%);
 }
-
 .tab:after {
   right: -2em;
   border-left-width: 2em;
   border-color: var(--ribbon) transparent var(--ribbon) var(--ribbon);
   filter: brightness(80%);
 }
-
 .tab button {
   background: none;
   float: left;
-  border: none;
-  outline: none;
+  border: 0;
+  outline: 0;
   cursor: pointer;
   padding: 2.25vh 16px;
   transition: 0.3s;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13pt;
+  text-decoration: none;
 }
-
 .tab button:hover {
   background-color: var(--tab_hover);
   transition: .5s;
 }
-
 .tab button.active {
   background-color: var(--tab_hover);
 }
-
 .tabcontent {
   animation: fadeEffect .5s;
   display: none;
-  padding: 15vh 2vw 5vh 2vw;
+  padding: 12vh 2vw 0vh 2vw;
   z-index: -2;
 }
-
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 25pt;
+  font-size: 22pt;
   color:var(--title);
   margin: auto auto 0.25em 0.5em;
   text-align: left;
 }
-
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--subtitle);
-  font-size: 18pt;
+  font-size: 14pt;
   margin: auto;
 }
-
-h3{
+h3 {
   color: var(--ribbon);
-  font-size: 16pt;
+  font-size: 12pt;
   padding: none;
   margin: auto;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
-
 #biopic {
   height: 50vh;
   width: auto;
   border: 0.5em double var(--shadow);
   float: left;
-  margin: 3em 1em 1em 2em;
+  margin: 0em 1em 1em 2em;
 }
 hr {
-  margin: 0.5em;
+  margin: 0.5em 0.5em 1em 0.5em;
   display: block;
   border: 0.125em solid var(--text);
   border-radius: 0.125em;
-  box-shadow: 0.05em 0.05em 0.1em var(--shadow);
+  box-shadow: 0.05em 0.05em 0.05em var(--shadow);
+}
+#About\ Me hr {
+  margin-bottom: 2.5em;
 }
 .div-light {
   margin: auto;
@@ -159,10 +151,12 @@ hr {
   box-shadow: none;
 }
 p{
-  font-size: 13pt;
+  font-size: 12pt;
   color: var(--text);
-  text-align: justify;
+  text-align: left;
   text-indent: 1em;
+  line-height: 1.33em;
+  padding-right: 1.5em;
 }
 #About_txt {
   padding: 0.5em;
@@ -176,8 +170,8 @@ p{
 }
 #About_info{
   display: inline-table;
-  padding: 20px 20px 20px 20px;
-  margin: 1em 1em 1em 1em;
+  padding: 1vh 1vw 1vh 1vw;
+  margin: 1em 0em 1em 0em;
   width: auto;
   border-collapse: collapse;
   float: left;
@@ -185,6 +179,9 @@ p{
   background: var(--bg);
   border-radius: 1em;
   filter: brightness(110%);
+}
+tbody {
+  margin: 2em;
 }
 th {
   padding: 0.5em 0 0.5em 1em;
@@ -204,16 +201,25 @@ td {
 .job {
   text-align: left;
   display: block;
-  margin: 1em auto 0 1em;
-  padding: 0.5em;
+  margin: 0.5em auto 0em 1em;
+  padding: 0.25em;
 }
 #skill_list {
   font-size: 13pt;
   display: block;
   float: left;
   position: relative;
-  margin: 1em;
+  margin: .5em;
   width: 40vw;
+  line-height: 1.5em;
+}
+ul {
+    list-style: disc outside none; 
+    margin-left: 0; 
+    padding-left: 1em;
+}
+li {
+    padding-left: 1em;
 }
 #skill_list > hr {
   width: 35vw;
@@ -242,20 +248,9 @@ td {
   width: 80vw;
   background: var(--body);
   position: absolute;
-  height: 60px;
-  top: 130px;
+  height: 7vh;
+  top: 2vh;
   z-index: -1;
-}
-::-webkit-scrollbar {
-    width: 13px;
-    height: 13px;
-}
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  border-top-right-radius: 2.5em;
+  border-top-left-radius: 2.5em;
 }
